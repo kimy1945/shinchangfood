@@ -1,0 +1,223 @@
+---
+---
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="referrer" content="always">
+		<meta property="og:type" content="article">
+		<meta property="og:site_name" content="순대공장 신창식품&amp;신토리">
+		<meta property="og:url" content="{{ page.url | absolute_url }}">
+		<meta property="og:title" content="[순대공장 신창식품&amp;신토리 - 게시판(중단)] 문의 안내">
+		<meta property="og:image" content="{{ '/static/image/character.png' | absolute_url }}">
+		<meta name="twitter:image" content="{{ '/static/image/character.png' | absolute_url }}">
+
+		<title>게시판(중단) | 순대공장 신창식품&amp;신토리</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+
+		<!-- 기존 섹션 스타일 구조 유지: (없으면 section14.css 같은 걸로 바꿔도 됨) -->
+		<link rel="stylesheet" href="{{ '/static/css/section14.css' | relative_url }}">
+		<link rel="stylesheet" href="{{ '/static/css/section14_mobile_736.css' | relative_url }}">
+
+		<!-- 이 페이지 전용: 트렌디 문의 카드 스타일 -->
+		<style>
+			.noticeCard {
+				margin-top: 1.2rem;
+				border: 1px solid #eee;
+				border-radius: 16px;
+				background: #fff;
+				box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+				overflow: hidden;
+			}
+			.noticeHead {
+				padding: 1.2rem 1.25rem;
+				background: linear-gradient(135deg, rgba(193,48,48,0.10), rgba(193,48,48,0.02));
+				border-bottom: 1px solid #f2f2f2;
+			}
+			.noticeHead h3 {
+				margin: 0;
+				font-size: 1.25rem;
+				line-height: 1.25;
+				color: #333;
+			}
+			.noticeHead p {
+				margin: 0.6rem 0 0 0;
+				line-height: 1.5rem;
+				color: #666;
+				font-size: 1rem;
+			}
+			.contactGrid {
+				display: grid;
+				grid-template-columns: 1fr 1fr;
+				gap: 12px;
+				padding: 1.25rem;
+			}
+			.contactBtn {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 10px;
+				padding: 0.95rem 0.9rem;
+				border-radius: 14px;
+				border: 1px solid #eee;
+				text-decoration: none !important;
+				font-weight: 700;
+				color: #333 !important;
+				background: #fff;
+				transition: transform 0.12s ease, box-shadow 0.12s ease, border-color 0.12s ease;
+			}
+			.contactBtn:hover {
+				transform: translateY(-1px);
+				box-shadow: 0 10px 20px rgba(0,0,0,0.07);
+				border-color: rgba(193,48,48,0.30);
+				color: #333 !important;
+			}
+			.contactIcon {
+				width: 42px;
+				height: 42px;
+				border-radius: 12px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background: rgba(193,48,48,0.10);
+				color: #c13030;
+				font-size: 1.1rem;
+			}
+			.contactMeta {
+				text-align: left;
+				line-height: 1.2;
+			}
+			.contactMeta small {
+				display: block;
+				font-size: 0.85rem;
+				color: #777;
+				font-weight: 600;
+				margin-bottom: 0.2rem;
+			}
+			.contactMeta span {
+				display: block;
+				font-size: 1.02rem;
+				color: #333;
+				letter-spacing: -0.2px;
+			}
+			.noticeFoot {
+				padding: 0 1.25rem 1.25rem 1.25rem;
+			}
+			.noticeFoot .tip {
+				margin: 0.25rem 0 0 0;
+				font-size: 0.95rem;
+				color: #777;
+				line-height: 1.5rem;
+			}
+			.badgeRow {
+				display: flex;
+				flex-wrap: wrap;
+				gap: 8px;
+				margin-top: 0.9rem;
+			}
+			.badge {
+				display: inline-flex;
+				align-items: center;
+				gap: 6px;
+				padding: 0.45rem 0.7rem;
+				border-radius: 999px;
+				border: 1px solid #eee;
+				background: #fafafa;
+				font-size: 0.9rem;
+				color: #555;
+				font-weight: 700;
+			}
+			@media screen and (max-width: 736px) {
+				.contactGrid { grid-template-columns: 1fr; }
+				.noticeHead h3 { font-size: 1.15rem; }
+			}
+		</style>
+	</head>
+
+	<body class="is-preload">
+		<!-- Header -->
+		<section id="header">
+			{% include header.html %}
+		</section>
+
+		<div id="wrapper">
+			<!-- Main -->
+			<div id="main">
+				<section id="zero">
+					<div class="preview main">
+						<a href="{{ '/' | relative_url }}">순대공장 신창식품&amp;신토리</a>
+					</div>
+				</section>
+
+				<section id="fifteen">
+					<div class="container preview">
+						<a href="{{ '/section15.html' | relative_url }}" class="major">
+							<h2>게시판(중단)</h2>
+						</a>
+
+						<div class="noticeCard">
+							<div class="noticeHead">
+								<h3>📌 게시판은 현재 운영을 중단했어요.</h3>
+								<p>
+									문의가 필요하시면 <strong>메일</strong> 또는 <strong>전화</strong>로 편하게 연락 주세요.
+									<br />확인하는 대로 빠르게 답변 드리겠습니다.
+								</p>
+							</div>
+
+							<div class="contactGrid">
+								<a class="contactBtn" href="tel:010-7136-8857">
+									<div class="contactIcon">📞</div>
+									<div class="contactMeta">
+										<small>전화 문의</small>
+										<span>010-7136-8857</span>
+									</div>
+								</a>
+
+								<a class="contactBtn" href="mailto:kimy1945@gmail.com?subject=%5B%EC%8B%A0%EC%B0%BD%EC%8B%9D%ED%92%88%20%EB%AC%B8%EC%9D%98%5D&body=%EC%95%88%EB%85%95%ED%95%98%EC%84%B8%EC%9A%94.%20%EB%AC%B8%EC%9D%98%20%EB%82%B4%EC%9A%A9%EC%9D%84%20%EC%9E%91%EC%84%B1%ED%95%B4%20%EC%A3%BC%EC%84%B8%EC%9A%94.%0A%0A-%20%EC%83%81%ED%98%B8/%EA%B0%80%EA%B2%8C%EB%AA%85%3A%0A-%20%EC%97%B0%EB%9D%BD%EC%B2%98%3A%0A-%20%EB%AC%B8%EC%9D%98%20%EB%82%B4%EC%9A%A9%3A%0A">
+									<div class="contactIcon">✉️</div>
+									<div class="contactMeta">
+										<small>메일 문의</small>
+										<span>kimy1945@gmail.com</span>
+									</div>
+								</a>
+							</div>
+
+							<div class="noticeFoot">
+								<p class="tip">
+									✅ 제품/납품/도매 상담은 언제든지 연락 주세요.<br />
+									✅ 통화가 어려우시면 메일로 남겨주시면 확인 후 연락드릴게요.
+								</p>
+
+								<div class="badgeRow">
+									<span class="badge">⚡ 빠른 응대</span>
+									<span class="badge">🧾 납품/도매 상담</span>
+									<span class="badge">📦 제품 문의</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="spaceHeight"></div>
+
+						{% include bannerAndSign.html %}
+					</div>
+				</section>
+
+				<!-- Footer -->
+				{% include footer.html %}
+			</div>
+
+			<div id="fullscreenModal" onclick="hideFullscreen()" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background: rgba(0,0,0,0.9); justify-content: center; align-items: center; z-index: 9999; padding: 1rem; box-sizing: border-box;">
+				<img id="fullscreenImage"/>
+			</div>
+
+			<!-- Scripts -->
+			<script src="{{ '/static/js/jquery.min.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/jquery.scrollex.min.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/jquery.scrolly.min.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/browser.min.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/breakpoints.min.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/util.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/main.js' | relative_url }}"></script>
+			<script src="{{ '/static/js/make.js' | relative_url }}"></script>
+	</body>
+</html>
