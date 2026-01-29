@@ -1,0 +1,40 @@
+<header style="position: sticky; top:0; z-index: 1000; background-color: rgb(193,48,48); border-bottom: 1px solid #ddd; ">
+	<a href="tel:1533-6156" class="image avatar"><img src="{{ '/static/image/character.png"  class="no-zoom" alt="" /></a>
+	<h1 id="logo"><a href="/">신창식품</a></h1>	
+	<br />
+	<h5>순대공장 HACCP 인증 순대,돈골육수,돼지부산물 안내</h5>		
+	<div class="consultBtnBox" >
+		<a href="tel:010-7136-8857"><img class="no-zoom" src="{{ '/static/image/icon/call_icon_black.png" />전화 문의</a>
+		<%-- <a target="_blank" href="https://open.kakao.com/o/sjtChMCh"><img class="no-zoom"src="{{ '/static/image/icon/kakao_icon.png" />카카오톡 문의</a> --%>
+	</div>			
+</header>
+<nav id="nav">
+	<ul>	
+		<li><a href="{{ /section01.html" class="${active eq 'section01' ? 'active' : ''}">공장소개/순대납품/순대도매</a></li>
+		<li><a href="{{ /section02.html" class="${active eq 'section02' ? 'active' : ''}">공장보유설비</a></li>
+		<li><a href="{{ /section03.html" class="${active eq 'section03' ? 'active' : ''}">순대 제품/순대공장</a></li>
+		<li><a href="{{ /section04.html" class="${active eq 'section04' ? 'active' : ''}">바자회 순대</a></li>
+		<li><a href="{{ /section05.html" class="${active eq 'section05' ? 'active' : ''}">순대국밥/돼지국밥 부산물</a></li>
+		<li><a href="{{ /section06.html" class="${active eq 'section06' ? 'active' : ''}">순대국밥/돼지국밥 머리고기</a></li>
+		<li><a href="{{ /section07.html" class="${active eq 'section07' ? 'active' : ''}">머리고기슬라이스</a></li>
+		<li><a href="{{ /section08.html" class="${active eq 'section08' ? 'active' : ''}">돈골육수/순대국 육수</a></li>
+		<li><a href="{{ /section09.html" class="${active eq 'section09' ? 'active' : ''}">우사골육수/설렁탕육수</a></li>
+		<li><a href="{{ /section10.html" class="${active eq 'section10' ? 'active' : ''}">순대국다대기</a></li>
+		<li><a href="{{ /section11.html" class="${active eq 'section11' ? 'active' : ''}">목우촌곱창</a></li>
+		<li><a href="{{ /section12.html" class="${active eq 'section12' ? 'active' : ''}">곱창볶음재료/순대볶음재료</a></li>
+		<li><a href="{{ /section13.html" class="${active eq 'section13' ? 'active' : ''}">공식 블로그</a></li>
+		<!-- <li><a href="{{ /sectihtml14.html" class="${active eq 'section14' ? 'active' : ''}">갤러리</a></li> -->
+		<li><a href="{{ /section15.html" class="${active eq 'section15' ? 'active' : ''}">게시판</a></li>
+		<li><a href="{{ /section16.html" class="${active eq 'section16' ? 'active' : ''}">☎️ 1533-6156</a></li>
+		<li><a href="{{ /section17.html" class="${active eq 'section17' ? 'active' : ''}">오시는길</a></li>
+	</ul>	  
+</nav>
+
+<script>
+  window.addEventListener('DOMContentLoaded', function () {
+    const activeMenu = document.querySelector('#nav .active');
+    if (activeMenu) {
+      activeMenu.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  });
+</script>
