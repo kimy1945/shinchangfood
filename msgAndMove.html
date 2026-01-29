@@ -1,0 +1,22 @@
+---
+---
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>알림</title>
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+
+      // msg는 필수, url은 선택(기본: 홈)
+      const msg = params.get('msg') || '안내 메시지입니다.';
+      const url = params.get('url') || '{{ "/" | relative_url }}';
+
+      alert(msg);
+      window.location.href = url;
+    });
+  </script>
+</head>
+<body></body>
+</html>
