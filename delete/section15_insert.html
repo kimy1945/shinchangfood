@@ -97,7 +97,7 @@
 								<h2>게시판 - 게시글 작성</h2>
 							</a>														
 								
-    <form id="boardWriteForm" method="post" action="{{ site.baseurl }}${mode eq 'update' ? '/section15/boardUpdate.html' : '/section15/boardwrite.html'}">
+    <form id="boardWriteForm" method="post" action="{{'${mode eq 'update' ? '/section15/boardUpdate.html' : '/section15/boardwrite.html'}">
       <label for="writer">작성자</label>
 		<%
 		    String writerName = "";
